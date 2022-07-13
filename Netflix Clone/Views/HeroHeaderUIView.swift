@@ -9,13 +9,13 @@ import UIKit
 
 class HeroHeaderUIView: UIView {
 
-    
     private let heroImageView: UIImageView = {
         
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
         imageView.image = UIImage(named: "heroImage")
+        imageView.contentMode = .scaleAspectFill
+        
+        imageView.clipsToBounds = true
         
         return imageView
     }()
